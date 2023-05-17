@@ -1,0 +1,16 @@
+@startgantt
+[Registration] lasts 1 day
+[Voting] lasts 2 days
+[Counting] lasts 5 days
+[Results] lasts 2 days
+[Cleanup] lasts 1 day
+[Conclusion] lasts 2 days
+
+Project starts 2023-04-09
+[Registration] ends 2023-04-10
+[Voting] ends 2023-04-12
+[Counting] ends 2023-04-17
+[Results] ends 2023-04-18
+[Cleanup] ends 2023-04-19
+[Conclusion] ends 2023-04-21
+@endgantt

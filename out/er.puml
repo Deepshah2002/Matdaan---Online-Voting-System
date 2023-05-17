@@ -1,0 +1,32 @@
+@startuml ER Diagram
+entity Admin {
+  admin_username
+  admin_password
+}
+
+entity User {
+  full_name
+  voter_id
+  email
+  voter_phone
+  password
+  gender
+  voted_for
+}
+
+entity Candidate {
+  candidate_name
+  candidate_party
+}
+
+entity Vote {
+  vote_id
+  vote_value
+}
+
+Admin --|| User
+Vote --|| User
+Vote }--|| Candidate
+Candidate }--|| Admin
+User }--|| Candidate
+@enduml

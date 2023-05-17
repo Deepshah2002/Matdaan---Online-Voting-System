@@ -1,0 +1,44 @@
+@startuml Class Diagram
+
+class Candidate {
+    -candidate_name: string
+    +searchCandidate()
+}
+
+class Vote {
+    -vote_id: int
+    -vote_name: string
+    +addVote()
+
+}
+
+class User {
+    -full_name: string
+    -voter_id: int
+    -email: string
+    -password: string
+    -gender: string
+    -voted_for: string
+    +user_registration()
+    +userlogin()
+    +userlogout()
+    +voteForCandidate()
+    +changePassword()
+    +viewCandidate()
+}
+
+class Admin {
+    -admin_username: string
+    -admin_password: string
+    +admin_login()
+    +admin_logout()
+    +checkVotes()
+    +changePassword()
+
+}
+
+User "1" -> "*" Candidate
+Admin "1" -> "*" Candidate
+Admin "1" -> "1" User
+User -- Vote
+@enduml

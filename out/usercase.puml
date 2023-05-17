@@ -1,0 +1,18 @@
+@startuml Use Case
+left to right direction
+
+actor User
+actor Admin
+
+rectangle {
+  User -- (Register)
+  User -- (Login)
+  User -- (Change Password)
+  User -- (Vote)
+  User -- (View Candidate Info)
+  
+  Admin -- (Login)
+  Admin -- (View Candidate Info)
+  Admin -- (View Total Vote Tally)
+}
+@enduml
